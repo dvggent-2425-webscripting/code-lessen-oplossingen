@@ -1,0 +1,150 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
+
+/* Variables */
+:root {
+  --font-family: "Oranienbaum", serif;
+  --color-beige-light: hsl(33.75, 84.21%, 92.55%);
+  --color-beige-medium: hsl(33.06, 74.24%, 74.12%);
+  --color-beige: hsl(32.73, 62.26%, 58.43%);
+  --color-brown: hsl(33.21, 87.5%, 12.55%);
+  --color-purple: hsl(267.77, 95.28%, 24.9%);
+  --color-deep-purple: hsl(258.26, 79.31%, 5.69%);
+}
+
+/* Global Styles */
+* {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* Body Styles */
+body {
+  font-family: var(--font-family);
+  background: url("../assets/orakel_background.svg") no-repeat center center /
+      75%,
+    linear-gradient(to right, var(--color-deep-purple), var(--color-purple));
+  color: var(--color-beige-medium);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Main container */
+main {
+  max-width: 54rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2.5rem;
+}
+
+/* Greeting Styles */
+.greeting {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* Cards Wrapper Styles */
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Cards Row Styles */
+.cards-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+/* Card and Button Common Styles */
+.card,
+.button {
+  color: var(--color-brown);
+}
+
+/* Card Styles */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 1.75rem;
+  width: 18.75rem;
+  padding: 1.75rem;
+  aspect-ratio: 1/1;
+  background-color: var(--color-beige-light);
+  border-radius: 0.625rem;
+  border: 0.25rem solid var(--color-beige);
+}
+
+.lucky-description {
+  font-size: 2.5rem;
+}
+
+.lucky-element {
+  height: 9rem;
+}
+
+.lucky-number {
+  font-size: 7rem;
+  text-align: center;
+}
+
+.lucky-color {
+  border-radius: 50%;
+  border: 0.125rem solid var(--color-brown);
+  width: 7.75rem;
+  height: 7.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* General Button Styles */
+.draw-button {
+  background-color: var(--color-beige-medium);
+  color: var(--color-brown);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.44rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.75rem;
+  border: 0.25rem solid var(--color-beige);
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+/* Draw Count Styles */
+.draw-count {
+  background-color: var(--color-purple);
+  color: hsl(0, 0%, 100%);
+  padding: 1rem 2rem 1.6rem 2rem;
+  border-radius: 1rem 1rem 0 0;
+  border: none;
+  font-size: 1.5rem;
+}

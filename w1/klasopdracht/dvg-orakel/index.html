@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Het Orakel van DVG</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <img src="assets/orakel_logo.svg" alt="Logo van het Orakel van DVG">
+    </header>
+
+    <main>
+        <h1 id="greeting" class="greeting">
+            Dag <span id="name">unknown</span>, <br>
+            dit zijn jouw gelukselementen van vandaag:
+        </h1>
+
+        <div class="cards-wrapper">
+            <div class="cards-row">
+                <article class="card">
+                    <p id="lucky-number" class="lucky-element lucky-number">7</p>
+
+                    <h2 class="lucky-description">Jouw Getal</h2>
+                </article>
+
+                <article class="card">
+                    <p id="lucky-color" class="lucky-element lucky-color"></p>
+
+                    <h2 class="lucky-description">Jouw Kleur</h2>
+                </article>
+            </div>
+        </div>
+
+        <button id="draw-button" class="draw-button">Nieuwe trekking</button>
+    </main>
+
+    <footer class="footer">
+        <p id="draw-count" class="draw-count">
+            Aantal trekkingen: <span id="count">1</span>
+        </p>
+    </footer>
+
+    <!-- Basis -->
+    <script src="js/main.js"></script>
+
+    <!-- Excelleren -->
+    <!-- <script src="js/excellerate.js"></script> -->
+</body>
+
+</html>
