@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+.ball {
+  width: 5rem;
+  height: 5rem;
+  background-color: hsl(0, 100%, 50%);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    width: 4.5rem;
+    height: 5.5rem;
+  }
+  50% {
+    transform: translateY(calc(100vh - 4.5rem));
+    width: 5.5rem;
+    height: 4.5rem;
+  }
+}
