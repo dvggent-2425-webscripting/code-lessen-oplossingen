@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fboy Island</title>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<img src="images/fboy-island-logo.png" alt="FBOY Island Logo" class="logo">
+			<h1>Fboy or Nice Guy?</h1>
+			<p class="subtitle">Kan jij raden wie een Nice Guy is en wie een FBOY?</p>
+		</header>
+
+		<article class="contestant">
+			<img id="contestant-image" class="contestant-image" src="" alt="Deelnemer">
+			<h2 id="contestant-name" class="contestant-name"></h2>
+		</article>
+
+		<div class="buttons">
+			<button id="nice-guy-btn" class="button green-btn">Nice Guy</button>
+			<button id="fboy-btn" class="button red-btn">FBOY</button>
+		</div>
+
+		<div id="result-modal" class="modal-backdrop">
+			<article class="modal">
+				<h2 id="result-title" class="result-title"></h2>
+				<p id="result-text" class="result-text"></p>
+				<button id="next-btn" class="button next-btn">Volgende deelnemer</button>
+			</article>
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
